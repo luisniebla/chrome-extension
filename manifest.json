@@ -2,5 +2,10 @@
     "name": "Postman ripoff",
     "version": "1.0",
     "description": "UAT helper",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "permissions": ["storage"],
+    "background": {
+	"scripts": ["auth.js"],
+	"persistent": false
+    }
 }
