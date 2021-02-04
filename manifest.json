@@ -3,9 +3,12 @@
     "version": "1.0",
     "description": "UAT helper",
     "manifest_version": 2,
-    "permissions": ["storage"],
+    "permissions": ["storage", "declarativeContent", "activeTab", "tabs"],
     "background": {
 	"scripts": ["auth.js"],
 	"persistent": false
+    },
+    "page_action": {
+	"default_popup": "popup.html"
     }
 }
